@@ -4,6 +4,7 @@ There are more professional tools, just google scribd downloader
 
 # Instalation:
 Unix:
+
 `git clone https://github.com/PodlaskiAsasyn-notAI/scribd_PDF-downloader`
 
 `pip install -r requirements.txt`
