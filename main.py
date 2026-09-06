@@ -15,6 +15,9 @@ def main(uri, output=None):
     if not downloader.dir.exists():
         downloader.create_dir()
 
+    if output is not None and output.find(".pdf") == -1:
+        output = output + ".pdf"
+
     if output is None:
         output = Path(f"./{downloader._data_name}.pdf")
 
@@ -65,7 +68,7 @@ def main(uri, output=None):
 
     if obrazy:
         obrazy[0].save(output, save_all=True, append_images=obrazy[1:])
-        print("PDF ready")
+    print("PDF ready")
 
 
 if __name__ == "__main__":
